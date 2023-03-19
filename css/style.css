@@ -74,9 +74,7 @@ line-height: 32px;
     flex-wrap: wrap;
     
 }
-.header__item {
-    
-}
+
 .header__item:not(:last-child) {
     margin-right: 21px;
 }
@@ -168,7 +166,7 @@ transition-timing-function: ease-in-out;
 }
 .main-block__image {
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     left: 0;
     top: 0;
     height: 100%;
@@ -179,10 +177,6 @@ transition-timing-function: ease-in-out;
 
 .page__services {
     margin-top: -121px;
-}
-.services {
-}
-.container__services {
 }
 
 .services__body {
@@ -311,7 +305,7 @@ text-align: center;
 
 .container__advice {
     margin-bottom: 80px;
-    margin-top: 225px;
+    
 }
 
 
@@ -366,5 +360,226 @@ font-size: 14px;
 line-height: 20px;
 color: #737373;
 }
-.advice__column-img {
+
+/* _____________________WHo___________________________________ */
+
+.page__who {
+    padding:  20px 0 100px 0;
 }
+.who__body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.who-content__title {
+    width: 333px;
+    font-weight: 700;
+font-size: 40px;
+line-height: 57px;
+letter-spacing: 0.2px;
+margin-bottom: 15px;
+}
+.who-content__text {
+    width: 333px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 40px;
+}
+
+.who-content__item {
+    margin-bottom: 30px;
+    
+   
+}
+.item__who {
+    display: flex;
+    
+}
+.item-who__icon {
+    margin-right: 20px;
+}
+
+.item-who__title {
+    font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+}
+.item-who__text {
+    font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+color: #737373;
+}
+
+/* _____________________________Client_____________________________________________ */
+
+
+.clietn__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 58px 0;
+    justify-content: center;
+}
+.client__item {
+    padding: 0 15px;
+    flex: 0 1 13.6667%;
+    text-align: center;
+    min-width: 140px;
+
+}
+.client__item img {
+    max-width: 100%;
+}
+/* _______________________________________Subscribe____________________________________ */
+
+.page__subscribe {
+    position: relative;
+    padding: 20px 0;
+}
+.page__subscribe::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 77px;
+    width: 100%;
+    background-color:  rgba(37, 43, 66, 1);
+
+}
+
+.subscribe__body {
+    position: relative;
+    z-index: 2;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(23, 33, 60, 1);
+}
+.subscribe__title {
+    max-width: 266px;
+    margin: 0;
+    padding: 30px 50px;
+   flex: 0 1 50%;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+}
+.form__subscribe {
+    display: flex;
+    align-items: center;
+    flex: 0 1 50%;
+}
+.subscribe__input {
+    flex: 1 1 auto;
+    margin: 33px 0;
+    min-width: 333px;
+    min-height: 58px;
+    background: #F9F9F9;
+border: 1px solid #E6E6E6;
+border-radius: 5px;
+}
+.subscribe__input:focus {
+    border: 1px solid yellow;
+}
+.subscribe__button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    min-width: 117px;
+    min-height: 63px;
+    color: white;
+    margin: 0 40px 0 0;
+    background-color: #FF7B47;
+border: 1px solid #E6E6E6;
+border-radius: 0px 5px 5px 0px;
+}
+
+/* ________________________________________________Contact__________________________________________ */
+
+.page__contact {
+}
+.contact__container {
+    padding: 80px 0 80px 0 ;
+}
+
+.contact__title {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+font-size: 40px;
+line-height: 57px;
+
+}
+.contact__text {
+    font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+color: #737373;
+margin-bottom: 80px;
+
+}
+.contact__body {
+   
+}
+.contact__colum {
+    display: flex;
+    
+}
+.contact__item {
+   
+    flex: 0 1 33.333%;
+    padding: 80px 52px;
+    align-items: center;
+    text-align: center;
+}
+.contact__item_active {
+    background-color: #252B42;
+    color: #E6E6E6;
+}
+.contact__item_active a {
+    color: #E6E6E6;
+}
+.contact__item_active .contact__item_button {
+border: 2px solid #E6E6E6;
+}
+.contact__item_icon {
+    
+    margin-bottom: 15px;
+}
+.contact__item_email {
+    font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+
+}
+.contact__item_title {
+    font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 15px;
+}
+.contact__item_button {
+    font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+    color: #FF7B47;
+    border: 1px solid #FF7B47;
+   display: inline-block;
+border-radius: 5px;
+    padding: 10px 20px;
+    transition-property: color,background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.contact__item_button:hover {
+    background-color: #FF7B47;
+    color: #E6E6E6;
+
+}
+
